@@ -59,6 +59,17 @@ It appears, PHP is attempting to use the symfony/console v6 version of
 `InputInterface` with the v2.8.52 version of `ArrayInput`, and this results in
 a fatal error.
 
+### Using Composer Snapshots
+
+I also tried the above using the latest Composer snapshot:
+
+```
+❯ composer self-update --snapshot
+Upgrading to version 96332161feb920e56280ac99af5d548dc3e25b51 (snapshot channel).
+```
+
+This results in the same fatal error.
+
 [1]: https://github.com/composer/composer/issues/8907
 [2]: https://github.com/ramsey/composer-repl
 [3]: https://github.com/symfony/console
